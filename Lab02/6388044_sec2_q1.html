@@ -8,30 +8,31 @@
         <form>
             <fieldset>
                 <legend><h1>Registration</h1></legend>
+                <!-- Student ID section -->
                 <label for="txtStudentID">Student ID</label>
                 <input type="text" id="txtStudentID" pattern="[0-9]{7}" title="#######" required><br>
-
+                <!-- First name section -->
                 <label for="txtFname">First name</label>
                 <input type="text" id="txtFname" pattern="[A-Za-z]*" title="Alphabet only" required><br>
-
+                <!-- Last name section -->
                 <label for="txtLname">Last name</label>
                 <input type="text" id="txtLname" pattern="[A-Za-z]*" title="Alphabet only"><br>
-
+                <!-- Birthday calendat section -->
                 <label for="BDpick">Birthday</label>
                 <input type="date" id="BDpick" min="2000-01-01" required><br>
-
-                <label for="gender">Gender: </label>
+                <!-- Gender radio boxes -->
+                Gender: <br>
                 <input type="radio" name="gender" value="IDK" checked>IDK
                 <input type="radio" name="gender" value="Female">Female
                 <input type="radio" name="gender" value="Male">Male<br>
-
-                <label for="hobbies">Hobbies: </label>
+                <!-- Hobbies checkboxes -->
+                Hobbies: <br>
                 <input type="checkbox" name="hobbies" value="Basketball">Basketball
                 <input type="checkbox" name="hobbies" value="Football">Football
                 <input type="checkbox" name="hobbies" value="Programming">Programming
                 <input type="checkbox" name="hobbies" value="Photography">Photography
                 <input type="checkbox" name="hobbies" value="Gaming">Gaming<br>
-
+                <!-- Buttons -->
                 <button type="submit">Submit</button>
                 <button type="reset">Clear</button>
             </fieldset>
