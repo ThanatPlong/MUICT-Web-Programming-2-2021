@@ -8,12 +8,12 @@ header, footer {
     text-align: center;
     background-color: #2E4053;
 }
-
+/* h1 inside header */
 header h1 {
     margin-bottom: 0px;
     padding: 20px;
 }
-
+/* p inside footer */
 footer p {
     padding: 5px;
 }
@@ -25,7 +25,7 @@ footer p {
     display: flex;
     flex-direction: row;
 }
-
+/* a inside navbar class */
 .navbar a {
     color: #FDFEFE;
     padding-top: 14px;
@@ -64,7 +64,7 @@ img:hover {
 figcaption {
     font-style: italic;
 }
-
+/* <a> with top class */
 a.top {
     text-align: center;
     display:block;
