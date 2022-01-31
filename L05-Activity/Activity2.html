@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script type = "application/javascript">
+            class Movie{
+                /* Constuctor */
+                constructor(_title, _year){
+                    /* Properties */
+                    this.title = _title; /* title type of string */ 
+                    this.year = _year;   /* year type of int */
+                }
+
+                /* Method */
+                getTitle(){
+                    return "Title: " + this.title;
+                }
+                getReleasedYear(){
+                    return "Year: " + this.year;
+                }
+            }
+
+            /* ----- Your JS code is here ----- */
+            /* Extend the Movie class to create a subclass */
+            class ThaiMovie extends Movie{
+                /* Constructor */
+                constructor(_title,_year,_titleTH){
+                    /* Properties */
+                    super(_title, _year);
+                    this.titleTH = _titleTH;
+                }
+
+                /* Methods */
+                getFullTitle(){
+                    /* Format: [titleTH]([title]) */
+                    return this.titleTH + " (" + this.title + ") ";
+                }
+
+            }
+            
+            /* Create two objects of the ThaiMovie class 
+               Example:
+               let movie1 = new ThaiMovie("Mr Deu",2019,"มิสเตอร์ดื้อ กันท่าเหรียญทอง");
+            */
+           let movie1 = new ThaiMovie("Mr Deu",2019,"มิสเตอร์ดื้อ กันท่าเหรียญทอง");
+           let movie2 = new ThaiMovie("Heart Attack",2015,"ฟรีแลนซ์...ห้ามป่วยห้ามพักห้ามรักหมอ");
+
+
+            /* Call methods to display the following format in the console 
+               [titleTH]([title]) released in Year: [year]
+               Example: 
+               มิสเตอร์ดื้อ กันท่าเหรียญทอง (Mr Deu) released in Year: 2019
+            */
+           console.log(movie1.getFullTitle() + "released in " + movie1.getReleasedYear());
+           console.log(movie2.getFullTitle() + "released in " + movie2.getReleasedYear());
+
+
+             /* ==========  Activity 2 ends here  ========== */
+        </script>
+    </body>
+</html>
