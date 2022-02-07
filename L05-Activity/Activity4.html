@@ -144,9 +144,13 @@
                 (Your name)
             */
           //  var cusUsername = document.getElementById("txtUsername").value;
-            var thkMessage = "Dear " + document.getElementById("txtUsername").value + ",<br>Thank you for your message.<br>------------------------<br>" + 
-                               document.getElementById("txtMessages").value + "<br>------------------------<br>We will contact you via " + document.getElementById("txtEmail").value + 
-                               "<br>within 3 business days<br>Sincerely,<br>Thanat";
+            var thkMessage = "Dear <b>" + document.getElementById("txtUsername").value + "</b>,<br>" + 
+            "Thank you for your message.<br>" + 
+            "------------------------<br>" + 
+            document.getElementById("txtMessages").value + "<br>" + 
+            "------------------------<br>" + 
+            "We will contact you via <b>" + document.getElementById("txtEmail").value + "</b><br>" +
+            "within 3 business days<br>Sincerely,<br>Thanat";
             
 
 
@@ -155,7 +159,7 @@
 
 
             /* 3. Show the generated message in the <div> "div_thk"*/
-            document.getElementById("div_thk").innerHTML += thkMessage;
+            document.getElementById("div_thk").innerHTML = thkMessage;
             
 
 

@@ -1,0 +1,15 @@
+{
+  "name": "l06-sec2-6388044-q2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "L06-Sec2-6388044-q2.js",
+  "scripts": {
+    "start": "nodemon L06-Sec2-6388044-q2.js"
+  },
+  "author": "Thanat, Section 2, 6388044",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
